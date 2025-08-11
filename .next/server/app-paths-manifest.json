@@ -1,0 +1,7 @@
+{
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/api/settings/public/route": "app/api/settings/public/route.js",
+  "/api/auth/me/route": "app/api/auth/me/route.js",
+  "/page": "app/page.js",
+  "/login/page": "app/login/page.js"
+}
