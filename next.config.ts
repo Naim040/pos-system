@@ -17,6 +17,9 @@ const nextConfig: NextConfig = {
   httpAgentOptions: {
     keepAlive: true,
   },
+  // Development origin configuration
+  allowedDevOrigins: ["ed05f478-ebce-4354-8724-e8d53e7b71bb-00-2pl9qknxjef96.sisko.replit.dev"],
+  
   // Experimental features for better performance
   experimental: {
     // Enable server actions for better performance
