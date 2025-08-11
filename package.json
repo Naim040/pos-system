@@ -6,7 +6,7 @@
     "node": ">=18.0.0"
   },
   "scripts": {
-    "dev": "nodemon --exec \"npx tsx server.ts\" --watch server.ts --watch src --ext ts,tsx,js,jsx 2>&1 | tee dev.log",
+    "dev": "next dev",
     "build": "next build",
     "start": "NODE_ENV=production node server.js 2>&1 | tee server.log",
     "start:prod": "NODE_ENV=production node server-prod-simple.js 2>&1 | tee server.log",
