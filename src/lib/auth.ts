@@ -1,4 +1,5 @@
 import { NextAuthOptions } from "next-auth"
+import { db } from './db'
 import CredentialsProvider from "next-auth/providers/credentials"
 
 export const authOptions: NextAuthOptions = {
@@ -50,7 +51,7 @@ export const authOptions: NextAuthOptions = {
     strategy: "jwt"
   },
   pages: {
-    signIn: "/auth/signin",
+    signIn: "/login",
   },
   callbacks: {
     async jwt({ token, user }) {
@@ -72,5 +73,6 @@ export const authOptions: NextAuthOptions = {
       }
       return session
     }
-  }
+  },
+  secret: process.env.NEXTAUTH_SECRET,
 }
